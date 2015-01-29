@@ -1,0 +1,9 @@
+---
+title: Money Transfer
+---
+
+<h1>Money transfer</h1>
+
+<ul>
+	<li><a href="<%= @getUrl('/country-page') %>">Start from Country page</a></li>
+</ul>

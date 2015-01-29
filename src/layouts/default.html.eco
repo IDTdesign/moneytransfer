@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= @document.title %></title>
+	<link rel="stylesheet" href="http://bossrevolution.com/Content/css/bossrevolution.css">
+	<%- @getBlock("styles").add(@getUrl(@site.styles)).toHTML() %>
+</head>
+<body>
+	<%- @content %>
+</body>
+</html>

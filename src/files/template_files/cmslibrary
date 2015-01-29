@@ -1,0 +1,159 @@
+function documentReady() {
+    if ( document.readyState === "complete" ) {
+        // Handle it asynchronously to allow scripts the opportunity to delay ready
+        setTimeout(initCms);
+
+        // Standards-based browsers support DOMContentLoaded
+    } else if (document.addEventListener) {
+        // Use the handy event callback
+        document.addEventListener("DOMContentLoaded", completed, false);
+
+        // A fallback to window.onload, that will always work
+        window.addEventListener("load", completed, false);
+
+        // If IE event model is used
+    } else {
+        // Ensure firing before onload, maybe late but safe also for iframes
+        document.attachEvent("onreadystatechange", completed);
+
+        // A fallback to window.onload, that will always work
+        window.attachEvent("onload", completed);
+    }
+}
+
+documentReady();
+
+// The ready event handler
+function completed(event) {
+
+    // readyState === "complete" is good enough for us to call the dom ready in oldIE
+    if (document.addEventListener || event.type === "load" || document.readyState === "complete") {
+        detach();
+        initCms();
+    }
+};
+
+// Clean-up method for dom ready events
+function detach() {
+    if (document.addEventListener) {
+        document.removeEventListener("DOMContentLoaded", completed, false);
+        window.removeEventListener("load", completed, false);
+
+    } else {
+        document.detachEvent("onreadystatechange", completed);
+        window.detachEvent("onload", completed);
+    }
+};
+
+function initCms() {
+
+    var sizeKeys = [ "xs", "sm", "md", "lg" ]; // The same as Twitter Bootstrap styles postfixes.
+    var idKey = "windowSizeIdentifier";
+    var $indentifierSelectors = {};
+
+    for (var i = 0; i < sizeKeys.length; i++) {
+        var sizeKey = sizeKeys[i];
+        var id = idKey + '-' + sizeKey;
+        var $indentifierElem = $('<div/>').attr('id', id).addClass('visible-' + sizeKey);
+        $indentifierSelectors[sizeKey] = $indentifierElem;
+        $('body').prepend($indentifierElem);
+    }
+
+    var $sizeIdentifierSelector = $('#windowSizeIdentifier'); // cache selector. please use 'context' in selector's syntax in case of using of complex selector pattern
+
+    if ($sizeIdentifierSelector.length == 0) {
+        var template = '<div id="windowSizeIdentifier" class="responsiveTell"/>';
+        $('body').prepend(template);
+        $sizeIdentifierSelector = $('#windowSizeIdentifier'); // recache
+    }
+
+    $(window).resize(function () {
+
+        var responsiveSize = "";
+        for (var i = 0; i < sizeKeys.length; i++) {
+            var sizeKey = sizeKeys[i];
+            if ($indentifierSelectors[sizeKey].is(":visible") === true) {
+                responsiveSize = sizeKey;
+                break;
+            }
+        }
+
+        var dataLoaded = true;
+        var zones = [];
+        switch (responsiveSize) {
+        case "xs": // Load content for "small" size.
+            if ($sizeIdentifierSelector.data("small-loaded") !== true) {
+                dataLoaded = false;
+                zones = BuildQueryForContentRequest("small");
+                $sizeIdentifierSelector.data("small-loaded", true);
+            }
+            break;
+
+        // Load large by default.
+        default: // Load content for "large" size.
+            if ($sizeIdentifierSelector.data("large-loaded") !== true) {
+                dataLoaded = false;
+                zones = BuildQueryForContentRequest("large");
+                $sizeIdentifierSelector.data("large-loaded", true);
+            }
+            break;
+        }
+
+        if ($sizeIdentifierSelector.data("any-loaded") !== true) {
+            dataLoaded = false;
+            BuildQueryForContentRequest("any", zones);
+            $sizeIdentifierSelector.data("any-loaded", true);
+        }
+        
+        if (dataLoaded === false) {
+            LoadAndPlaceContent(zones);
+        }
+    });
+
+    function BuildQueryForContentRequest(size, zones) {
+
+        var zonesMetadata = (zones) ? zones : [];
+
+        $('div[data-size="' + size + '"]').each(function () {
+            var zoneMetadata =
+            {
+                ZoneName: $(this).data("zonename"),
+                ZoneSize: $(this).data("size"),
+                ZoneLangCode: $(this).data("lang")
+            }
+            zonesMetadata.push(zoneMetadata);
+        });
+        return zonesMetadata;
+    }
+
+    function LoadAndPlaceContent(zones) {
+
+        if (zones.length === 0) {
+            return;
+        }
+
+        var data = JSON.stringify(zones);
+        $.ajax({
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            type: 'POST',
+            url: "/cms/zonecontentlist",
+            data: data,
+            success: function (data, textStatus) {
+                for (i in data) {
+                    $('div[data-zonename="' + data[i].ZoneName + '"][data-size="' + data[i].ZoneSize + '"]').each(function () {
+                        try {
+                            $(this).html(data[i].ZoneContent);
+                        } catch (e) {
+                            if (typeof (console) == "object" && typeof (console.log) == "function") {
+                                console.log(e);
+                            }
+                        } 
+                    });
+                }
+            }
+        });
+    }
+
+    $(window).trigger('resize');
+};
