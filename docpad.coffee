@@ -7,7 +7,7 @@ docpadConfig = {
 	templateData:
 		site:
 			# The production url of our website. Used in sitemap and rss feed
-			url: "http://interpaul.github.io/moneytransfer"
+			url: "http://IDTdesign.github.io/moneytransfer"
 
 			# The website's styles
 			styles: [

@@ -1,0 +1,12 @@
+---
+title: Colombia
+layout: template
+---
+
+
+<div><img src="<%= @getUrl('/img/money-transfer-header.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/amount.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/transfer-rate.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/delivery-all.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/payment-all.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/register') %>"><img src="<%= @getUrl('/img/total-continue-1.png') %>" alt=""></a></div>

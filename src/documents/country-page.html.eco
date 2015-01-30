@@ -9,6 +9,6 @@ layout: template
 <div><img src="<%= @getUrl('/img/special-offer.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/amount.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/transfer-rate.png') %>" alt=""></div>
-<div><img src="<%= @getUrl('/img/get-started.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/money-transfer') %>"><img src="<%= @getUrl('/img/get-started.png') %>" alt=""></a></div>
 <div><img src="<%= @getUrl('/img/1500.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/other-services.png') %>" alt=""></div>
