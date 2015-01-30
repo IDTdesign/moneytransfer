@@ -252,19 +252,6 @@
     <%- @content %>
 </div>
 <footer class="allpage--footer">
-    <div class="footer-promo">
-        <div class="container">
-            <div data-zonename="Global_FooterBanner" data-size="any" data-lang="en-US" class="visible-lg visible-md visible-sm visible-xs"><div class="text-center">
-               <p class="footer-promo--title h3">
-                  Download Our App and Get $1 Free
-              </p>
-              <p class="footer-promo--title">
-                  <a class="btn btn-appstore" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtiosus205352e7fdf92b98a1b6332f50080c&network_id=1038&device_id=device_id&site_id=1"></a>
-                  <a class="btn btn-gplay" target="_blank" href="https://control.kochava.com/v1/cpi/click?campaign_id=koidtandroidus205652e7fe894452f86e38049620b4&network_id=1038&device_id=device_id&site_id=1"></a>
-              </p>
-          </div></div>
-      </div>
-  </div>
   <nav class="footer-main">
     <div class="container">
         <div class="mediablock mediablock-sm-vertical mediablock-2-to-3">
@@ -298,9 +285,6 @@
                             </div>
                         </div>
                         <!-- /content for tablet and desktop --></div>
-                    </div>
-                    <div class="col-sm-4 col-md-12 no-padding chat-btn-sm">
-
                     </div>
                 </div>
                 <div class="mediablock--secondary clr">

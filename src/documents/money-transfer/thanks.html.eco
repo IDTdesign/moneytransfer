@@ -1,0 +1,18 @@
+---
+title: 'Thanks for your order'
+layout: template
+---
+
+<div><img src="<%= @getUrl('/img/breadcrumbs-collapsed.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/title-thanks.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/money-transfer/history/order') %>"><img src="<%= @getUrl('/img/thanks-order-details.png') %>" alt=""></a></div>
+<div><img src="<%= @getUrl('/img/order-status.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/stay-informed.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/money-transfer/alerts') %>"><img src="<%= @getUrl('/img/alerts.png') %>" alt=""></a></div>
+<div><a href="<%= @getUrl('/international-calling') %>"><img src="<%= @getUrl('/img/free-call-promo.png') %>" alt=""></a></div>
+<div><a href="<%= @getUrl('/money-transfer/reminders') %>"><img src="<%= @getUrl('/img/reminders.png') %>" alt=""></a></div>
+<div><img src="<%= @getUrl('/img/top-up-promo-title.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/country-field.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/phone-field.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/mobile-carrier-field.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/international-top-up') %>"><img src="<%= @getUrl('/img/continue-top-up.png') %>" alt=""></a></div>

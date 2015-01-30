@@ -1,0 +1,6 @@
+---
+title: 'Login or Register'
+layout: template
+---
+
+<div><a href="<%= @getUrl('/money-transfer/bank-info') %>"><img src="<%= @getUrl('/img/login-page-all.png') %>" alt=""></a></div>
