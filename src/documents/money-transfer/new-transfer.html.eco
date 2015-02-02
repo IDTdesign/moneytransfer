@@ -1,0 +1,16 @@
+---
+title: 'Start a new transfer'
+layout: template
+---
+
+<div><img src="<%= @getUrl('/img/breadcrumbs-transparent.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/new-transfer-header.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/title-mt-1.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/contact-new.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/country-field.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/amount.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/transfer-rate.png') %>" alt=""></div>
+<div style="padding: 20px 0; background: #7A7672;"><img src="<%= @getUrl('/img/special-offer.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/delivery-all.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/payment-all.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/money-transfer/bank-info') %>"><img src="<%= @getUrl('/img/total-continue-1.png') %>" alt=""></a></div>

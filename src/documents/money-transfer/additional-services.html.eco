@@ -1,0 +1,14 @@
+---
+title: 'What’s Next'
+layout: template
+---
+
+<div><img src="<%= @getUrl('/img/breadcrumbs-collapsed.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/title-thanks.png') %>" alt=""></div>
+<div style="padding-top:20px; background: #7A7672"><a href="<%= @getUrl('/international-calling') %>"><img src="<%= @getUrl('/img/free-call-promo.png') %>" alt=""></a></div>
+<div><a href="<%= @getUrl('/money-transfer/reminders') %>"><img src="<%= @getUrl('/img/reminders.png') %>" alt=""></a></div>
+<div><img src="<%= @getUrl('/img/top-up-promo-title.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/country-field.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/phone-field.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/mobile-carrier-field.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/international-top-up') %>"><img src="<%= @getUrl('/img/continue-top-up.png') %>" alt=""></a></div>

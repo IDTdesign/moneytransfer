@@ -5,5 +5,6 @@ title: Money Transfer
 <h1>Money transfer</h1>
 
 <ul>
-	<li><a href="<%= @getUrl('/country-page') %>">Start from Country page</a></li>
+    <li><a href="<%= @getUrl('/country-page') %>">Start from Country page (new user)</a></li>
+	<li><a href="<%= @getUrl('/money-transfer') %>">My account/Money Transfer</a></li>
 </ul>

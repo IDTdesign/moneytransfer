@@ -16,9 +16,15 @@ docpadConfig = {
 
 			# The website's production scripts.
 			# See also Environments section below for development scripts
-			#scripts: [
-			#	'/js/output.min.js'
-			#]
+			scripts: [
+				'/vendor/bootstrap/js/bootstrap.min.js'
+				'/vendor/sticky/jquery.sticky.min.js'
+				'/vendor/jquery.localScroll/jquery.localScroll.min.js'
+				'/vendor/jquery.scrollTo/jquery.scrollTo.min.js'
+				'/vendor/bowser/bowser.min.js'
+				'/scripts/forms.js'
+				'/scripts/script.js'
+			]
 
 	# Environments
 

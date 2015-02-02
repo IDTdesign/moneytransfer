@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://www.bossrevolution.com/Content/bootstrap.css">
     <link rel="stylesheet" href="https://www.bossrevolution.com/Content/bootstrap-theme.css">
     <link rel="stylesheet" href="https://www.bossrevolution.com/Content/site.css">
-    <link href="https://www.bossrevolution.com/Content/jquery-ui-1.10.4/ui-lightness/jquery-ui-1.10.4.css" rel="stylesheet">
     <script src="<%= @getUrl('/template_files/jquery') %>"></script>
     <script src="<%= @getUrl('/template_files/modernizr') %>"></script>
     <link rel="stylesheet" href="https://www.bossrevolution.com/Content/selectordie.css">
@@ -22,12 +21,7 @@
     <link rel="stylesheet" href="https://www.bossrevolution.com/Content/css/bossrevolution_fix.css">
 
     <script type="text/javascript" src="<%= @getUrl('/template_files/svg-icons.js') %>"></script>
-    <script charset="UTF-8" id="_lpTagScriptId_0" src="<%= @getUrl('/template_files/jsonp"></script><script charset="iso-8859-1') %>" src="<%= @getUrl('/template_files/mTag.js') %>"></script>
-    <script charset="UTF-8" src="<%= @getUrl('/template_files/saved_resource') %>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<%= @getUrl('/template_files/saved_resource(1)') %>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<%= @getUrl('/template_files/saved_resource(2)') %>"></script>
-    <script type="text/javascript" charset="UTF-8" src="<%= @getUrl('/template_files/saved_resource(3)') %>" id="lpScriptId596575248986-356314187403"></script>
-    <%- @getBlock("styles").add(@getUrl(@site.styles)).toHTML() %>
+    <%- @getBlock('styles').add(@getUrl(@site.styles)).add(@getUrl(@document.styles)).toHTML() %>
 </head>
 <body class="b_HomeIndex en-US scrolltop" data-spy="scroll" data-target=".local-nav" data-offset="80" >
     <div id="windowSizeIdentifier" class="responsiveTell"></div>
@@ -435,14 +429,6 @@
     </footer>
 </div>
 
-<script src="<%= @getUrl('/template_files/bootstrap') %>"></script>
-<script src="<%= @getUrl('/template_files/others') %>"></script>
-<script src="<%= @getUrl('/template_files/WebResource.axd') %>" type="text/javascript"></script>
-<script src="<%= @getUrl('/template_files/WebResource(1).axd') %>" type="text/javascript"></script>
-<script type="text/javascript" src="<%= @getUrl('/template_files/bowser.min.js') %>"></script>
-<script type="text/javascript" src="<%= @getUrl('/template_files/jquery.sticky.min.js') %>"></script>
-<script type="text/javascript" src="<%= @getUrl('/template_files/jquery.scrollTo.min.js') %>"></script>
-<script type="text/javascript" src="<%= @getUrl('/template_files/jquery.localScroll.min.js') %>"></script>
-<%- @getBlock("scripts").add(@getUrl(@site.scripts)).toHTML() %>
+<%- @getBlock('scripts').add(@getUrl(@site.scripts)).add(@getUrl(@document.scripts)).toHTML() %>
 </body>
 </html>

@@ -5,6 +5,7 @@
 	<title><%= @document.title %></title>
 	<link rel="stylesheet" href="http://bossrevolution.com/Content/css/bossrevolution.css">
 	<%- @getBlock("styles").add(@getUrl(@site.styles)).toHTML() %>
+    <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 </head>
 <body>
 	<%- @content %>

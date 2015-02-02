@@ -5,6 +5,7 @@ layout: template
 
 
 <div><img src="<%= @getUrl('/img/money-transfer-header.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/country-field.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/amount.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/transfer-rate.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/delivery-all.png') %>" alt=""></div>
