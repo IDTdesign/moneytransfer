@@ -32,7 +32,7 @@ docpadConfig = {
 		development:
 			templateData:
 				site:
-					url: 'http://10.94.4.93:9778'
+					url: ''
 
 	# Plugins configurations
 	plugins:
