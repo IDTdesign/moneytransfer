@@ -1,0 +1,19 @@
+---
+title: 'Bank Information'
+layout: template
+---
+
+<div><img src="<%= @getUrl('/img/breadcrumbs-collapsed.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/title-lets-continue.png') %>" alt=""></div>
+<div>
+	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
+	<div class="expand">
+		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
+		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand-pickup.png') %>" alt="">
+	</div>
+</div>
+<div>
+	<a href="<%= @getUrl('/money-transfer/recipient-info') %>">
+		<img src="<%= @getUrl('/img/pickup-location.png') %>" alt="">
+	</a>
+</div>

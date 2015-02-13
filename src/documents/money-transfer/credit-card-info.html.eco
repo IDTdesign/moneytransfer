@@ -5,14 +5,21 @@ layout: template
 
 <div><img src="<%= @getUrl('/img/breadcrumbs-collapsed.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/title-we-need-your-payment.png') %>" alt=""></div>
-<div>
+<div class="bank-credit">
 	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
 	<div class="expand">
 		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
 		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand.png') %>" alt="">
 	</div>
 </div>
-<div><a href="<%= @getUrl('/money-transfer/bank-info') %>"><img src="<%= @getUrl('/img/bank-info-summary.png') %>" alt=""></a></div>
+<div class="pickup-credit">
+	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
+	<div class="expand">
+		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
+		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand-pickup.png') %>" alt="">
+	</div>
+</div>
+<div class="bank-credit"><a href="<%= @getUrl('/money-transfer/bank-info') %>"><img src="<%= @getUrl('/img/bank-info-summary.png') %>" alt=""></a></div>
 <div><a href="<%= @getUrl('/money-transfer/recipient-info') %>"><img src="<%= @getUrl('/img/recip-info-summary.png') %>" alt=""></a></div>
 <div><img src="<%= @getUrl('/img/transfer-totals.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/credit-card-form.png') %>" alt=""></div>

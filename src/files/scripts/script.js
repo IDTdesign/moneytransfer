@@ -224,6 +224,11 @@ $('#payment a').each(function(){
     }
 })
 
-console.log(localStorage.getItem('delivery'), localStorage.getItem('payment'))
+
+if($('#checkPath').length) {
+   $('#checkPath').attr('href', $('#checkPath').data(localStorage.getItem('delivery')))
+}
+
+$('body').addClass(localStorage.getItem('delivery') +'-' + localStorage.getItem('payment'));
 
 }(jQuery));

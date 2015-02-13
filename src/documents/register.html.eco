@@ -3,4 +3,13 @@ title: 'Login or Register'
 layout: template
 ---
 
-<div><a href="<%= @getUrl('/money-transfer/bank-info') %>"><img src="<%= @getUrl('/img/login-page-all.png') %>" alt=""></a></div>
+<div>
+	<a  id="checkPath" 
+		data-pickup="<%= @getUrl('/money-transfer/pickup') %>"
+		data-bank="<%= @getUrl('/money-transfer/bank-info') %>"
+		data-home="<%= @getUrl('/money-transfer/home') %>"
+		href="#"
+	>
+		<img src="<%= @getUrl('/img/login-page-all.png') %>" alt="">
+	 </a>
+</div>

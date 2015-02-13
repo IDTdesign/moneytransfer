@@ -34,3 +34,11 @@ img.not_visible {
 .list a{
 	display: block;	
 }
+
+body .pickup-credit,
+body .bank-credit 
+{display: none;}
+
+
+.bank-credit .bank-credit{display: block;}
+.pickup-credit .pickup-credit{display: block;}
