@@ -1,7 +1,6 @@
 /* Your scripts go here */
 (function ($) {
 
-
     $('#hash_nav a').click(function () {
         $('#hash_nav a').removeClass('active');
         $(this).addClass('active');
@@ -177,5 +176,54 @@
         });
     }
 
+
+
+
+
+/*new JS for proto*/
+$('.expand').click(function(){
+    $(this).toggleClass('expanded');
+})
+
+$('.list a').click(function(){
+    var self = $(this)
+    self.parent().next().attr('src', self.attr('href'));
+    if (self.data('delivery')) {
+        localStorage.setItem('delivery',self.data('delivery'));
+    }
+    if (self.data('payment')) {
+        localStorage.setItem('payment', self.data('payment'));
+    }
+    
+
+    return false;
+})
+
+
+/*roudblocks*/
+
+if (localStorage.getItem('delivery') == null)
+{
+    localStorage.setItem('delivery','bank');
+}
+
+if (localStorage.getItem('payment') == null)
+{
+    localStorage.setItem('payment','credit');
+}
+
+$('#delivery a').each(function(){
+    if($(this).data('delivery') == localStorage.getItem('delivery')){
+        $(this).click();
+    }
+})
+
+$('#payment a').each(function(){
+    if($(this).data('payment') == localStorage.getItem('payment')){
+        $(this).click();
+    }
+})
+
+console.log(localStorage.getItem('delivery'), localStorage.getItem('payment'))
 
 }(jQuery));

@@ -4,15 +4,17 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
+<!--
     <script type="text/javascript" async="" src="<%= @getUrl('/template_files/conversion_async.js') %>"></script>
     <script async="" src="<%= @getUrl('/template_files/gtm.js') %>"></script>
     <script async="" src="<%= @getUrl('/template_files/fbds.js') %>"></script>
-    <script async="" src="<%= @getUrl('/template_files/analytics.js') %>"></script>
+    <script async="" src="< @getUrl('/template_files/analytics.js') %>"></script>
+-->
     <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <title><%= @document.title %></title>
     <link rel="stylesheet" href="https://www.bossrevolution.com/Content/bootstrap.css">
     <link rel="stylesheet" href="https://www.bossrevolution.com/Content/bootstrap-theme.css">
-    <link rel="stylesheet" href="https://www.bossrevolution.com/Content/site.css">
+    <!--link rel="stylesheet" href="https://www.bossrevolution.com/Content/site.css"-->
     <script src="<%= @getUrl('/template_files/jquery') %>"></script>
     <script src="<%= @getUrl('/template_files/modernizr') %>"></script>
     <link rel="stylesheet" href="https://www.bossrevolution.com/Content/selectordie.css">
@@ -21,6 +23,7 @@
     <link rel="stylesheet" href="https://www.bossrevolution.com/Content/css/bossrevolution_fix.css">
 
     <script type="text/javascript" src="<%= @getUrl('/template_files/svg-icons.js') %>"></script>
+    <!-- proto css -->
     <%- @getBlock('styles').add(@getUrl(@site.styles)).add(@getUrl(@document.styles)).toHTML() %>
 </head>
 <body class="b_HomeIndex en-US scrolltop" data-spy="scroll" data-target=".local-nav" data-offset="80" >
@@ -106,7 +109,7 @@
         <div class="allpage--headerbg2"></div>
         <div class="container">
             <div class="logo">
-                <a class="logo--link" href="<%= @getUrl('/template_files/template.html') %>"><img src="<%= @getUrl('/template_files/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
+                <a class="logo--link" href="<%= @getUrl('/') %>"><img src="<%= @getUrl('/template_files/logo-bossrevolution.png') %>" alt="BossRevolution"></a>
             </div>
 
             <nav class="navbar navbar-topline">
@@ -423,9 +426,9 @@
             </div>
         </div>
 
-        <div id=" jqdialog">
+        <!--div id=" jqdialog">
             <span id="jqdialog_message"></span>
-        </div>
+        </div-->
     </footer>
 </div>
 

@@ -1,0 +1,36 @@
+html, body {
+	max-width: 640px;
+}
+.expand {
+	cursor: pointer;
+}
+
+.expanded img {
+	display: none;
+}
+img.not_visible {
+	display: none;
+}
+.expanded img.not_visible {
+	display: block;
+}
+
+
+
+#payment,
+#delivery {
+	position: relative;
+}
+#payment a,
+#delivery a {
+	outline: none;
+}
+
+.list{
+	position: absolute;
+	left: 0;	
+	width: 100%;
+}
+.list a{
+	display: block;	
+}
