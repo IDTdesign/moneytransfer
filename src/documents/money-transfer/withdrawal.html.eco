@@ -1,32 +1,35 @@
 ---
-title: 'Confirm'
+title: 'Credit Card Information'
 layout: template
 ---
 
 <div><img src="<%= @getUrl('/img/breadcrumbs-collapsed.png') %>" alt=""></div>
-<div><img src="<%= @getUrl('/img/title-confirm.png') %>" alt=""></div>
-<div class="bank-credit">
+<div><img src="<%= @getUrl('/img/title-we-need-your-payment.png') %>" alt=""></div>
+<div class="bank-withdrawal">
+bank
 	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
 	<div class="expand">
 		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
 		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand.png') %>" alt="">
 	</div>
 </div>
-<div class="pickup-credit">
+<div class="pickup-withdrawal">
+	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
+	<div class="expand">
+		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
+		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand-pickup3.png') %>" alt="">
+	</div>
+</div>
+<div class="home-withdrawal">
+home
 	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
 	<div class="expand">
 		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
 		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand-pickup.png') %>" alt="">
 	</div>
 </div>
-<div class="home-credit">
-	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
-	<div class="expand">
-		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
-		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand.png') %>" alt="">
-	</div>
-</div>
 <div class="bank-credit"><a href="<%= @getUrl('/money-transfer/bank-info') %>"><img src="<%= @getUrl('/img/bank-info-summary.png') %>" alt=""></a></div>
 <div><a href="<%= @getUrl('/money-transfer/recipient-info') %>"><img src="<%= @getUrl('/img/recip-info-summary.png') %>" alt=""></a></div>
-<div><a href="<%= @getUrl('/money-transfer/credit-card-info') %>"><img src="<%= @getUrl('/img/cc-summary.png') %>" alt=""></a></div>
-<div><a href="<%= @getUrl('/money-transfer/thanks') %>"><img src="<%= @getUrl('/img/submit-button-block.png') %>" alt=""></a></div>
+<div class="bank-credit"><img src="<%= @getUrl('/img/transfer-totals.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/bank-withdrawal_form.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/money-transfer/confirm') %>"><img src="<%= @getUrl('/img/continue.png') %>" alt=""></a></div>

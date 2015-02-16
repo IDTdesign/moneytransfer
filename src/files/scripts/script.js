@@ -228,6 +228,9 @@ $('#payment a').each(function(){
 if($('#checkPath').length) {
    $('#checkPath').attr('href', $('#checkPath').data(localStorage.getItem('delivery')))
 }
+if($('#checkPath2').length) {
+   $('#checkPath2').attr('href', $('#checkPath2').data(localStorage.getItem('payment')))
+}
 
 $('body').addClass(localStorage.getItem('delivery') +'-' + localStorage.getItem('payment'));
 

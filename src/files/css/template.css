@@ -36,9 +36,17 @@ img.not_visible {
 }
 
 body .pickup-credit,
-body .bank-credit 
+body .bank-credit,
+body .bank-withdrawal,
+body .home-withdrawal,
+body .pickup-withdrawal,
+body .bank-debit
 {display: none;}
 
 
-.bank-credit .bank-credit{display: block;}
-.pickup-credit .pickup-credit{display: block;}
+.bank-credit .bank-credit,
+.pickup-credit .pickup-credit,
+.bank-debit .bank-debit,
+.bank-withdrawal .bank-withdrawal,
+.home-withdrawal .home-withdrawal,
+.pickup-withdrawal .pickup-withdrawal{display: block;}
