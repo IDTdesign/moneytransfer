@@ -8,8 +8,15 @@ layout: template
 <div>
 	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
 	<div class="expand">
-		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
-		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand-pickup.png') %>" alt="">
+		<img class="collapsed" src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
+		<div class="not_visible">
+			<img  src="<%= @getUrl('/img/dynamic/condition-pickup.png') %>" alt="">	
+			<img class="pickup-credit" src="<%= @getUrl('/img/dynamic/condition-credit.png') %>" alt="">
+			<img class="pickup-debit" src="<%= @getUrl('/img/dynamic/condition-debit.png') %>" alt="">
+			<img class="pickup-withdrawal" src="<%= @getUrl('/img/dynamic/condition-withdrawal.png') %>" alt="">
+			<img  src="<%= @getUrl('/img/dynamic/condition_24h.png') %>" alt="">
+			<img  src="<%= @getUrl('/img/dynamic/condition_total.png') %>" alt="">
+		</div>
 	</div>
 </div>
 <div>

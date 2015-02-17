@@ -8,8 +8,19 @@ layout: template
 <div>
 	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
 	<div class="expand">
-		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
-		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand-home.png') %>" alt="">
+		<img class="collapsed" src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
+		<div class="not_visible">
+			<img class="pickup-credit pickup-debit pickup-withdrawal" src="<%= @getUrl('/img/dynamic/condition-pickup.png') %>" alt="">	
+			<img class="bank-credit bank-debit bank-withdrawal" src="<%= @getUrl('/img/dynamic/condition-bank.png') %>" alt="">	
+			<img class="home-credit home-debit home-withdrawal" src="<%= @getUrl('/img/dynamic/condition-home.png') %>" alt="">
+
+			<img class="pickup-credit bank-credit home-credit" src="<%= @getUrl('/img/dynamic/condition-credit.png') %>" alt="">
+			<img class="pickup-debit bank-debit home-debit" src="<%= @getUrl('/img/dynamic/condition-debit.png') %>" alt="">
+			<img class="pickup-withdrawal bank-withdrawal home-withdrawal" src="<%= @getUrl('/img/dynamic/condition-withdrawal.png') %>" alt="">
+			
+			<img  src="<%= @getUrl('/img/dynamic/condition_24h.png') %>" alt="">
+			<img  src="<%= @getUrl('/img/dynamic/condition_total.png') %>" alt="">
+		</div>
 	</div>
 </div>
 <div>

@@ -1,20 +1,23 @@
 html, body {
-	max-width: 640px;
+	max-width: 320px;
 }
 .expand {
 	cursor: pointer;
 }
 
-.expanded img {
+.not_visible {
 	display: none;
 }
-img.not_visible {
-	display: none;
-}
-.expanded img.not_visible {
+.expanded .not_visible {
 	display: block;
 }
 
+.expand .collapsed {
+	display: block;
+}
+.expanded .collapsed{
+	display: none;
+}
 
 
 #payment,
@@ -36,17 +39,24 @@ img.not_visible {
 }
 
 body .pickup-credit,
-body .bank-credit,
-body .bank-withdrawal,
-body .home-withdrawal,
+body .pickup-debit,
 body .pickup-withdrawal,
-body .bank-debit
-{display: none;}
+body .bank-credit,
+body .bank-debit,
+body .bank-withdrawal,
+body .home-credit,
+body .home-debit,
+body .home-withdrawal
+{display: none !important;}
 
 
-.bank-credit .bank-credit,
 .pickup-credit .pickup-credit,
+.pickup-debit .pickup-debit,
+.pickup-withdrawal .pickup-withdrawal,
+.bank-credit .bank-credit,
 .bank-debit .bank-debit,
 .bank-withdrawal .bank-withdrawal,
-.home-withdrawal .home-withdrawal,
-.pickup-withdrawal .pickup-withdrawal{display: block;}
+.home-credit .home-credit,
+.home-debit .home-debit,
+.home-withdrawal .home-withdrawal
+{display: block !important;}

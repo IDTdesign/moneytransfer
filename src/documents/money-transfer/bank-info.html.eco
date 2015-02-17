@@ -5,27 +5,19 @@ layout: template
 
 <div><img src="<%= @getUrl('/img/breadcrumbs-collapsed.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/title-lets-continue.png') %>" alt=""></div>
-<div class="bank-credit">
+<div>
 	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
 	<div class="expand">
-		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
-		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand.png') %>" alt="">
+		<img class="collapsed" src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
+		<div class="not_visible">
+			<img  src="<%= @getUrl('/img/dynamic/condition-bank.png') %>" alt="">	
+			<img class="bank-credit" src="<%= @getUrl('/img/dynamic/condition-credit.png') %>" alt="">
+			<img class="bank-debit" src="<%= @getUrl('/img/dynamic/condition-debit.png') %>" alt="">
+			<img class="bank-withdrawal" src="<%= @getUrl('/img/dynamic/condition-withdrawal.png') %>" alt="">
+			<img  src="<%= @getUrl('/img/dynamic/condition_24h.png') %>" alt="">
+			<img  src="<%= @getUrl('/img/dynamic/condition_total.png') %>" alt="">
+		</div>
 	</div>
 </div>
-<div class="bank-debit">
-	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
-	<div class="expand">
-		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
-		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand-bank2.png') %>" alt="">
-	</div>
-</div>
-<div class="bank-withdrawal">
-	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
-	<div class="expand">
-		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
-		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand-bank.png') %>" alt="">
-	</div>
-</div>
-
 <div><img src="<%= @getUrl('/img/bank-info.png') %>" alt=""></div>
 <div><a href="<%= @getUrl('/money-transfer/recipient-info') %>"><img src="<%= @getUrl('/img/continue.png') %>" alt=""></a></div>

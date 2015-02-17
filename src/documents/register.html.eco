@@ -7,7 +7,7 @@ layout: template
 	<a  id="checkPath" 
 		data-pickup="<%= @getUrl('/money-transfer/pickup') %>"
 		data-bank="<%= @getUrl('/money-transfer/bank-info') %>"
-		data-home="<%= @getUrl('/money-transfer/home') %>"
+		data-home="<%= @getUrl('/money-transfer/recipient-info') %>"
 		href="#"
 	>
 		<img src="<%= @getUrl('/img/login-page-all.png') %>" alt="">
