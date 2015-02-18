@@ -24,5 +24,7 @@ layout: template
 		</div>
 	</div>
 </div>
-<div><img src="<%= @getUrl('/img/bank-withdrawal_form.png') %>" alt=""></div>
+<div class="off"><img src="<%= @getUrl('/img/bank-withdrawal_form.png') %>" alt=""></div>
+<div class="on"><img src="<%= @getUrl('/img/dynamic/your-bank.png') %>" alt=""></div>
+<div class="on"><a href="<%= @getUrl('/money-transfer/add-bank') %>"><img src="<%= @getUrl('/img/dynamic/add-bank.png') %>" alt=""></a></div>
 <div><a href="<%= @getUrl('/money-transfer/confirm') %>"><img src="<%= @getUrl('/img/continue.png') %>" alt=""></a></div>

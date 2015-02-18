@@ -7,12 +7,26 @@ layout: template
 <div><img src="<%= @getUrl('/img/title-confirm.png') %>" alt=""></div>
 <div>
 	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img/transfer-summary-edit.png') %>" alt=""></a>
-	<div class="expand">
-		<img src="<%= @getUrl('/img/transfer-summary.png') %>" alt="">
-		<img class="not_visible" src="<%= @getUrl('/img/transfer-summary-expand.png') %>" alt="">
+	<div class="expand expanded">
+		<img class="collapsed" src="<%= @getUrl('/img/dynamic/transfer-summary-summ.png') %>" alt="">
+		<div class="not_visible">
+			<img class="pickup-credit pickup-debit pickup-withdrawal" src="<%= @getUrl('/img/dynamic/condition-pickup.png') %>" alt="">	
+			<img class="bank-credit bank-debit bank-withdrawal" src="<%= @getUrl('/img/dynamic/condition-bank.png') %>" alt="">	
+			<img class="home-credit home-debit home-withdrawal" src="<%= @getUrl('/img/dynamic/condition-home.png') %>" alt="">
+
+			<img class="pickup-credit bank-credit home-credit" src="<%= @getUrl('/img/dynamic/condition-credit.png') %>" alt="">
+			<img class="pickup-debit bank-debit home-debit" src="<%= @getUrl('/img/dynamic/condition-debit.png') %>" alt="">
+			<img class="pickup-withdrawal bank-withdrawal home-withdrawal" src="<%= @getUrl('/img/dynamic/condition-withdrawal.png') %>" alt="">
+
+			<a class="bank-credit bank-debit bank-withdrawal" href="<%= @getUrl('/money-transfer/bank-info') %>"><img src="<%= @getUrl('/img/dynamic/condition-bank-edit.png') %>" alt=""></a>
+			<a href="<%= @getUrl('/money-transfer/recipient-info') %>"><img src="<%= @getUrl('/img/dynamic/condition-recipient-edit.png') %>" alt=""></a>
+			<a class="pickup-withdrawal pickup-credit pickup-debit" href="<%= @getUrl('/money-transfer/pickup') %>"><img src="<%= @getUrl('/img/dynamic/condition-pickup-edit.png') %>" alt=""></a>
+			
+			<a class="pickup-withdrawal bank-withdrawal home-withdrawal" href="<%= @getUrl('/money-transfer/withdrawal') %>"><img src="<%= @getUrl('/img/dynamic/condition-yourbank-edit.png') %>" alt=""></a>
+
+			<a class="pickup-credit bank-credit home-credit" href="<%= @getUrl('/money-transfer/credit-card-info') %>"><img src="<%= @getUrl('/img/dynamic/condition-card-edit.png') %>" alt=""></a>
+			<a class="pickup-debit bank-debit home-debit" href="<%= @getUrl('/money-transfer/credit-card-info') %>"><img src="<%= @getUrl('/img/dynamic/condition-debit-edit.png') %>" alt=""></a>			
+		</div>
 	</div>
 </div>
-<div><a href="<%= @getUrl('/money-transfer/bank-info') %>"><img src="<%= @getUrl('/img/bank-info-summary.png') %>" alt=""></a></div>
-<div><a href="<%= @getUrl('/money-transfer/recipient-info') %>"><img src="<%= @getUrl('/img/recip-info-summary.png') %>" alt=""></a></div>
-<div><a href="<%= @getUrl('/money-transfer/credit-card-info') %>"><img src="<%= @getUrl('/img/CC-with-CVV.png') %>" alt=""></a></div>
 <div><a href="<%= @getUrl('/money-transfer/thanks') %>"><img src="<%= @getUrl('/img/submit-button-block.png') %>" alt=""></a></div>

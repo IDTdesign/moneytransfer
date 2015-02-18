@@ -212,6 +212,11 @@ if (localStorage.getItem('payment') == null)
     localStorage.setItem('payment','credit');
 }
 
+if (localStorage.getItem('auth') == null)
+{
+    localStorage.setItem('auth','off');
+}
+
 $('#delivery a').each(function(){
     if($(this).data('delivery') == localStorage.getItem('delivery')){
         $(this).click();
@@ -232,6 +237,20 @@ if($('#checkPath2').length) {
    $('#checkPath2').attr('href', $('#checkPath2').data(localStorage.getItem('payment')))
 }
 
-$('body').addClass(localStorage.getItem('delivery') +'-' + localStorage.getItem('payment'));
+if($('#auth').length) {
+    if ($('#auth').data('auth') == 'on') {
+        localStorage.setItem('auth','on');    
+    } else {
+        localStorage.setItem('auth','off');    
+    }    
+}
+
+$('#delivery a, #payment a').click(function(){
+    $('#checkPath').attr('href', $('#checkPath').data(localStorage.getItem('delivery')));
+    $('#checkPath2').attr('href', $('#checkPath2').data(localStorage.getItem('payment')))
+});
+
+
+$('body').addClass(localStorage.getItem('delivery') +'-' + localStorage.getItem('payment')+' '+localStorage.getItem('auth'));
 
 }(jQuery));

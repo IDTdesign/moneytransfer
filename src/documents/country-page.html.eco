@@ -3,7 +3,7 @@ title: Colombia
 layout: template
 ---
 
-<div><img src="<%= @getUrl('/img/country-page-header.png') %>" alt=""></div>
+<div id="auth" data-auth="off"><img src="<%= @getUrl('/img/country-page-header.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/money-transfer-header.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/mt-pretext.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img/special-offer.png') %>" alt=""></div>
