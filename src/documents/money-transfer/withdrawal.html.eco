@@ -26,6 +26,7 @@ layout: template
 </div>
 <div class="off"><img src="<%= @getUrl('/img/bank-withdrawal_form.png') %>" alt=""></div>
 <div class="on"><img src="<%= @getUrl('/img/dynamic/your-bank.png') %>" alt=""></div>
-<div class="on"><a href="<%= @getUrl('/money-transfer/add-bank') %>"><img src="<%= @getUrl('/img/dynamic/add-bank.png') %>" alt=""></a></div>
+<div class="on"><img src="<%= @getUrl('/img/dynamic/add-bank-message.png') %>" alt=""></div>
+<!--div class="on"><a href="<%= @getUrl('/money-transfer/add-bank') %>"><img src="<%= @getUrl('/img/dynamic/add-bank.png') %>" alt=""></a></div-->
 <div class="on"><a href="<%= @getUrl('/money-transfer/confirm') %>"><img src="<%= @getUrl('/img/continue.png') %>" alt=""></a></div>
 <div class="off"><a href="<%= @getUrl('/money-transfer/microtransaction') %>"><img src="<%= @getUrl('/img/continue.png') %>" alt=""></a></div>

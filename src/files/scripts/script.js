@@ -251,6 +251,25 @@ $('#delivery a, #payment a').click(function(){
 });
 
 
+$('#checkPopup').click(function(){
+    if (localStorage.getItem('payment') == 'withdrawal')
+    {
+        $('#delivery, #payment').hide();
+        $('#popup').show();
+            $('html, body').animate({
+                scrollTop: $("#popup").offset().top
+            }, 100);
+        return false
+    } 
+})
+
+$('#closePopup').click(function(){
+    $('#delivery, #payment').show();
+    $('#popup').hide();
+
+    return false;
+})
+
 $('body').addClass(localStorage.getItem('delivery') +'-' + localStorage.getItem('payment')+' '+localStorage.getItem('auth'));
 document.location.hash = localStorage.getItem('delivery') +'-' + localStorage.getItem('payment')+'-'+localStorage.getItem('auth')
 }(jQuery));

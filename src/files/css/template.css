@@ -68,3 +68,15 @@ body .home-withdrawal
 .off .on {
 	display: none;
 }
+
+#popup {
+	display: none;
+}
+
+.border-bottom {
+	border-bottom: solid 10px #716f6d;
+}
+
+.pointer {
+	cursor: pointer;
+}

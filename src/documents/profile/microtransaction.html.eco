@@ -1,0 +1,9 @@
+---
+title: 'Bank Information'
+layout: template
+---
+
+<div><a href="<%= @getUrl('/user-profile') %>"><img src="<%= @getUrl('/img/breadcrumbs-collapsed.png') %>" alt=""></a></div>
+<div><img src="<%= @getUrl('/img/title-please-confirm-micro-transaction.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/microtransaction.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img/continue.png') %>" alt=""></div>
