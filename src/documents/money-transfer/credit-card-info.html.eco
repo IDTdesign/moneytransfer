@@ -27,7 +27,7 @@ layout: template
 </div>
 <div class="on">
 	<a href="<%= @getUrl('/money-transfer/credit-card-new') %>">
-		<img  src="<%= @getUrl('/img/dynamic/select-card.png') %>" alt="">
+		<img  src="<%= @getUrl('/img/select-cc.png') %>" alt="">
 	</a>
 </div>
 <div class="off"><img src="<%= @getUrl('/img/credit-card-form.png') %>" alt=""></div>
