@@ -18,14 +18,26 @@ layout: template
 			<img class="pickup-debit bank-debit home-debit" src="<%= @getUrl('/img/dynamic/condition-debit.png') %>" alt="">
 			<img class="pickup-withdrawal bank-withdrawal home-withdrawal" src="<%= @getUrl('/img/dynamic/condition-withdrawal.png') %>" alt="">
 
-			<a class="bank-credit bank-debit bank-withdrawal" href="<%= @getUrl('/money-transfer/bank-info') %>"><img src="<%= @getUrl('/img/dynamic/condition-bank-edit.png') %>" alt=""></a>
-			<a href="<%= @getUrl('/money-transfer/recipient-info') %>"><img src="<%= @getUrl('/img/dynamic/condition-recipient-edit.png') %>" alt=""></a>
-			<a class="pickup-withdrawal pickup-credit pickup-debit" href="<%= @getUrl('/money-transfer/pickup') %>"><img src="<%= @getUrl('/img/dynamic/condition-pickup-edit.png') %>" alt=""></a>
+			<a class="bank-credit bank-debit bank-withdrawal" href="<%= @getUrl('/money-transfer/bank-info') %>">
+				<img src="<%= @getUrl('/img/dynamic/condition-bank-edit.png') %>" alt="">
+			</a>
+			<a href="<%= @getUrl('/money-transfer/recipient-info') %>">
+				<img src="<%= @getUrl('/img/dynamic/condition-recipient-edit.png') %>" alt="">
+			</a>
+			<a class="pickup-withdrawal pickup-credit pickup-debit" href="<%= @getUrl('/money-transfer/pickup') %>">
+				<img src="<%= @getUrl('/img/dynamic/condition-pickup-edit.png') %>" alt="">
+			</a>
 			
-			<a class="pickup-withdrawal bank-withdrawal home-withdrawal" href="<%= @getUrl('/money-transfer/withdrawal') %>"><img src="<%= @getUrl('/img/dynamic/condition-yourbank-edit.png') %>" alt=""></a>
+			<a class="pickup-withdrawal bank-withdrawal home-withdrawal" href="<%= @getUrl('/money-transfer/withdrawal') %>">
+				<img src="<%= @getUrl('/img/dynamic/condition-yourbank-edit.png') %>" alt="">
+			</a>
 
-			<a class="pickup-credit bank-credit home-credit" href="<%= @getUrl('/money-transfer/credit-card-info') %>"><img src="<%= @getUrl('/img/dynamic/condition-card-edit.png') %>" alt=""></a>
-			<a class="pickup-debit bank-debit home-debit" href="<%= @getUrl('/money-transfer/credit-card-info') %>"><img src="<%= @getUrl('/img/dynamic/condition-debit-edit.png') %>" alt=""></a>			
+			<a class="pickup-credit bank-credit home-credit" href="<%= @getUrl('/money-transfer/credit-card-info') %>">
+				<img src="<%= @getUrl('/img/dynamic/condition-card-edit-cvv.png') %>" alt="">
+			</a>
+			<a class="pickup-debit bank-debit home-debit" href="<%= @getUrl('/money-transfer/credit-card-info') %>">
+				<img src="<%= @getUrl('/img/dynamic/condition-debit-edit-cvv.png') %>" alt="">
+			</a>			
 		</div>
 	</div>
 </div>

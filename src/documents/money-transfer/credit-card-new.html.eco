@@ -13,19 +13,17 @@ layout: template
 			<img class="pickup-credit pickup-debit pickup-withdrawal" src="<%= @getUrl('/img/dynamic/condition-pickup.png') %>" alt="">	
 			<img class="bank-credit bank-debit bank-withdrawal" src="<%= @getUrl('/img/dynamic/condition-bank.png') %>" alt="">	
 			<img class="home-credit home-debit home-withdrawal" src="<%= @getUrl('/img/dynamic/condition-home.png') %>" alt="">
+
 			<img class="pickup-credit bank-credit home-credit" src="<%= @getUrl('/img/dynamic/condition-credit.png') %>" alt="">
 			<img class="pickup-debit bank-debit home-debit" src="<%= @getUrl('/img/dynamic/condition-debit.png') %>" alt="">
 			<img class="pickup-withdrawal bank-withdrawal home-withdrawal" src="<%= @getUrl('/img/dynamic/condition-withdrawal.png') %>" alt="">
 
+			<a class="bank-credit bank-debit bank-withdrawal" href="<%= @getUrl('/money-transfer/bank-info') %>"><img src="<%= @getUrl('/img/dynamic/condition-bank-edit.png') %>" alt=""></a>
 			<a href="<%= @getUrl('/money-transfer/recipient-info') %>"><img src="<%= @getUrl('/img/dynamic/condition-recipient-edit.png') %>" alt=""></a>
-			<a class="pickup-withdrawal" href="<%= @getUrl('/money-transfer/pickup') %>"><img src="<%= @getUrl('/img/dynamic/condition-pickup-edit.png') %>" alt=""></a>
 			<img  src="<%= @getUrl('/img/dynamic/condition_24h.png') %>" alt="">
 			<img  src="<%= @getUrl('/img/dynamic/condition_total.png') %>" alt="">
 		</div>
 	</div>
 </div>
-<div class="off"><img src="<%= @getUrl('/img/bank-withdrawal_form.png') %>" alt=""></div>
-<div class="on"><img src="<%= @getUrl('/img/dynamic/your-bank.png') %>" alt=""></div>
-<div class="on"><a href="<%= @getUrl('/money-transfer/add-bank') %>"><img src="<%= @getUrl('/img/dynamic/add-bank.png') %>" alt=""></a></div>
-<div class="on"><a href="<%= @getUrl('/money-transfer/confirm') %>"><img src="<%= @getUrl('/img/continue.png') %>" alt=""></a></div>
-<div class="off"><a href="<%= @getUrl('/money-transfer/microtransaction') %>"><img src="<%= @getUrl('/img/continue.png') %>" alt=""></a></div>
+<div><img src="<%= @getUrl('/img/credit-card-form.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/money-transfer/confirm') %>"><img src="<%= @getUrl('/img/continue.png') %>" alt=""></a></div>

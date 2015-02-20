@@ -252,5 +252,5 @@ $('#delivery a, #payment a').click(function(){
 
 
 $('body').addClass(localStorage.getItem('delivery') +'-' + localStorage.getItem('payment')+' '+localStorage.getItem('auth'));
-
+document.location.hash = localStorage.getItem('delivery') +'-' + localStorage.getItem('payment')+'-'+localStorage.getItem('auth')
 }(jQuery));
