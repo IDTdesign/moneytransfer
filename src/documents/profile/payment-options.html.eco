@@ -5,6 +5,11 @@ layout: template
 <div id="auth" data-auth='on'><img src="<%= @getUrl('/img/breadcrumbs-collapsed.png') %>" alt=""></div>
 <div><a href="<%= @getUrl('/user-profile') %>"><img src="<%= @getUrl('/img/profile/menu-payment.png') %>" alt=""></a></div>
 <div><img src="<%= @getUrl('/img/dynamic/your-bank.png') %>" alt=""></div>
-<div><a href="<%= @getUrl('/profile/add-bank') %>"><img src="<%= @getUrl('/img/dynamic/add-bank.png') %>" alt=""></a></div>
 
-
+<div class="expand">
+	<img class="collapsed" src="<%= @getUrl('/img/dynamic/add-bank.png') %>" alt="">
+	<div class="not_visible">
+		<div><img src="<%= @getUrl('/img/profile/add-bank-form.png') %>" alt=""></div>
+		<div><a href="<%= @getUrl('/profile/microtransaction') %>"><img src="<%= @getUrl('/img/continue.png') %>" alt=""></a></div>
+	</div>
+</div>
