@@ -1,0 +1,11 @@
+---
+title: 'Confirm'
+layout: template
+---
+
+<div><img src="<%= @getUrl('/img-white/breadcrumbs-collapsed.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img-white/title-confirm.png') %>" alt=""></div>
+<div>
+	<a href="<%= @getUrl('/money-transfer/amount') %>"><img src="<%= @getUrl('/img-white/transfer-summary-edit.png') %>" alt=""></a>	
+	<img  src="<%= @getUrl('/img-white/_del1.png') %>" alt="">
+</div>
