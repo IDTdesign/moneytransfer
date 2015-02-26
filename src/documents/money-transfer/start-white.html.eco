@@ -30,10 +30,7 @@ layout: template
 		</a>
 		<a href="<%= @getUrl('/img-white/dynamic/payment-2.png') %>" data-payment="debit">
 			<img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
-		</a>
-		<a href="<%= @getUrl('/img-white/dynamic/payment-3.png') %>" data-payment="withdrawal">
-			<img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
-		</a>
+		</a>		
 	</div>	
 	<img src="<%= @getUrl('/img-white/dynamic/payment-1.png') %>" alt="">
 </div>
@@ -43,10 +40,7 @@ layout: template
 	</a>
 	<a href="<%= @getUrl('/money-transfer') %>" >
 		<img src="<%= @getUrl('/img-white/dynamic/popup_login.png') %>" alt="">
-	</a>
-	<a id="closePopup" href="#">
-		<img src="<%= @getUrl('/img-white/dynamic/popup_close.png') %>" alt="">
-	</a>
+	</a>	
 </div>
 <div>
 	<a href="<%= @getUrl('/money-transfer/start-white2') %>">
