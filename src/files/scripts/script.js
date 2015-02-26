@@ -241,7 +241,13 @@ if($('#auth').length) {
     if ($('#auth').data('auth') == 'on') {
         localStorage.setItem('auth','on');    
     } else {
-        localStorage.setItem('auth','off');    
+        if ($('#auth').data('auth') == 'disabled') {
+            localStorage.setItem('auth','disabled'); 
+        }
+        else {
+            localStorage.setItem('auth','off');        
+        }
+        
     }    
 }
 
@@ -271,5 +277,8 @@ $('#closePopup').click(function(){
 })
 
 $('body').addClass(localStorage.getItem('delivery') +'-' + localStorage.getItem('payment')+' '+localStorage.getItem('auth'));
-document.location.hash = localStorage.getItem('delivery') +'-' + localStorage.getItem('payment')+'-'+localStorage.getItem('auth')
+if (localStorage.getItem('auth') != 'disabled') {
+    document.location.hash = localStorage.getItem('delivery') +'-' + localStorage.getItem('payment')+'-'+localStorage.getItem('auth')    
+}
+
 }(jQuery));
