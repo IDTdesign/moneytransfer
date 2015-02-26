@@ -20,7 +20,13 @@ layout: template
 	</div>
 </div>
 <div>
-	<a href="<%= @getUrl('/money-transfer/recipient-info') %>">
-		<img src="<%= @getUrl('/img/pickup-location.png') %>" alt="">
-	</a>
+	<div class="expand">
+		<img src="<%= @getUrl('/img/pickup-location.png') %>" alt="">	
+		<div class="not_visible">
+			<a href="<%= @getUrl('/money-transfer/recipient-info') %>">
+				<img src="<%= @getUrl('/img/pickup-location-results.png') %>" alt="">
+			</a>		
+		</div>
+	</div>
+	
 </div>
