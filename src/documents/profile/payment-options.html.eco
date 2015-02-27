@@ -9,8 +9,15 @@ layout: template
 <div class="expand">
 	<img class="collapsed" src="<%= @getUrl('/img/dynamic/add-bank.png') %>" alt="">
 	<div class="not_visible">
-		<div><img src="<%= @getUrl('/img/profile/add-bank-form.png') %>" alt=""></div>		
-		<div><a href="<%= @getUrl('/profile/payment-options2') %>"><img src="<%= @getUrl('/img/submit.png') %>" alt=""></a></div>
+		<div><img src="<%= @getUrl('/img/profile/add-bank-form_0.png') %>" alt=""></div>		
+		<div><a href="<%= @getUrl('/profile/microtransaction') %>"><img src="<%= @getUrl('/img/continue.png') %>" alt=""></a></div>
 	</div>
 </div>
-<div><img src="<%= @getUrl('/img/select-cc.png') %>" alt=""></div>
+<img src="<%= @getUrl('/img/select-cc-form.png') %>" alt="">
+<div class="expand">	
+	<img class="collapsed" src="<%= @getUrl('/img/add-cc-button.png') %>" alt="">
+	<div class="not_visible">
+		<div><img src="<%= @getUrl('/img/credit-card-form.png') %>" alt=""></div>		
+		<div><img src="<%= @getUrl('/img/submit.png') %>" alt=""></div>
+	</div>
+</div>
