@@ -1,0 +1,24 @@
+---
+title: Choose you delivery and payment methods
+layout: template
+---
+<div id="auth" data-auth='disabled'><img src="<%= @getUrl('/img-white/breadcrumbs-collapsed.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/user-profile') %>"><img src="<%= @getUrl('/img-white/profile/menu-payment.png') %>" alt=""></a></div>
+<div><img src="<%= @getUrl('/img-white/dynamic/your-bank.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img-white/profile/bank-JPMorgan.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img-white/profile/success-added.png') %>" alt=""></div>
+<div class="expand">
+	<img class="collapsed" src="<%= @getUrl('/img-white/dynamic/add-bank.png') %>" alt="">
+	<div class="not_visible">
+		<div><img src="<%= @getUrl('/img-white/profile/add-bank-form_0.png') %>" alt=""></div>		
+		<div><a href="<%= @getUrl('/profile/payment-options2') %>"><img src="<%= @getUrl('/img-white/continue.png') %>" alt=""></a></div>
+	</div>
+</div>
+<img src="<%= @getUrl('/img-white/select-cc-form.png') %>" alt="">
+<div class="expand">	
+	<img class="collapsed" src="<%= @getUrl('/img-white/add-cc-button.png') %>" alt="">
+	<div class="not_visible">
+		<div><img src="<%= @getUrl('/img-white/credit-card-form.png') %>" alt=""></div>		
+		<div><img src="<%= @getUrl('/img-white/submit.png') %>" alt=""></div>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+---
+title: 'Bank Information'
+layout: template
+---
+
+<div><img src="<%= @getUrl('/img-white/breadcrumbs-collapsed.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img-white/title-lets-continue.png') %>" alt=""></div>
+<div>
+    <a href="<%= @getUrl('/white/money-transfer/amount') %>"><img src="<%= @getUrl('/img-white/transfer-summary-edit.png') %>" alt=""></a>
+    <div class="expand">
+        <img class="collapsed" src="<%= @getUrl('/img-white/transfer-summary.png') %>" alt="">
+        <div class="not_visible">
+            <img  src="<%= @getUrl('/img-white/dynamic/condition-pickup.png') %>" alt="">
+            <img class="pickup-credit" src="<%= @getUrl('/img-white/dynamic/condition-credit.png') %>" alt="">
+            <img class="pickup-debit" src="<%= @getUrl('/img-white/dynamic/condition-debit.png') %>" alt="">
+            <img class="pickup-withdrawal" src="<%= @getUrl('/img-white/dynamic/condition-withdrawal.png') %>" alt="">
+            <img  src="<%= @getUrl('/img-white/dynamic/condition_24h.png') %>" alt="">
+            <img  src="<%= @getUrl('/img-white/dynamic/condition_total.png') %>" alt="">
+        </div>
+    </div>
+</div>
+<div>
+    <div class="expand">
+        <img src="<%= @getUrl('/img-white/pickup-location.png') %>" alt="">
+        <div class="not_visible">
+            <a href="<%= @getUrl('/white/money-transfer/recipient-info') %>">
+                <img src="<%= @getUrl('/img-white/pickup-location-results.png') %>" alt="">
+            </a>
+        </div>
+    </div>
+
+</div>

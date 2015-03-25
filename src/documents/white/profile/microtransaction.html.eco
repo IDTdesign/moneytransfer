@@ -1,0 +1,9 @@
+---
+title: Choose you delivery and payment methods
+layout: template
+---
+<div id="auth" data-auth='disabled'><img src="<%= @getUrl('/img-white/breadcrumbs-collapsed.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/user-profile') %>"><img src="<%= @getUrl('/img-white/profile/menu-payment.png') %>" alt=""></a></div>
+<div><img src="<%= @getUrl('/img-white/dynamic/your-bank.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img-white/profile/add-bank-form.png') %>" alt=""></div>		
+<div><a href="<%= @getUrl('/profile/payment-options2') %>"><img src="<%= @getUrl('/img-white/submit.png') %>" alt=""></a></div>

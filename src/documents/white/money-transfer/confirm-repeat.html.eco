@@ -1,0 +1,44 @@
+---
+title: 'Confirm'
+layout: template
+---
+
+<div><img src="<%= @getUrl('/img-white/breadcrumbs-collapsed.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img-white/title-confirm.png') %>" alt=""></div>
+<div>
+    <a href="<%= @getUrl('/white/money-transfer/amount') %>"><img src="<%= @getUrl('/img-white/transfer-summary-edit.png') %>" alt=""></a>
+    <div class="expand expanded">
+        <img class="collapsed" src="<%= @getUrl('/img-white/dynamic/transfer-summary-summ.png') %>" alt="">
+        <div class="not_visible">
+            <img class="pickup-credit pickup-debit pickup-withdrawal" src="<%= @getUrl('/img-white/dynamic/condition-pickup.png') %>" alt="">
+            <img class="bank-credit bank-debit bank-withdrawal" src="<%= @getUrl('/img-white/dynamic/condition-bank.png') %>" alt="">
+            <img class="home-credit home-debit home-withdrawal" src="<%= @getUrl('/img-white/dynamic/condition-home.png') %>" alt="">
+
+            <img class="pickup-credit bank-credit home-credit" src="<%= @getUrl('/img-white/dynamic/condition-credit.png') %>" alt="">
+            <img class="pickup-debit bank-debit home-debit" src="<%= @getUrl('/img-white/dynamic/condition-debit.png') %>" alt="">
+            <img class="pickup-withdrawal bank-withdrawal home-withdrawal" src="<%= @getUrl('/img-white/dynamic/condition-withdrawal.png') %>" alt="">
+
+            <a class="bank-credit bank-debit bank-withdrawal" href="<%= @getUrl('/white/money-transfer/bank-info') %>">
+                <img src="<%= @getUrl('/img-white/dynamic/condition-bank-edit.png') %>" alt="">
+            </a>
+            <a href="<%= @getUrl('/white/money-transfer/recipient-info') %>">
+                <img src="<%= @getUrl('/img-white/dynamic/condition-recipient-edit.png') %>" alt="">
+            </a>
+            <a class="pickup-withdrawal pickup-credit pickup-debit" href="<%= @getUrl('/white/money-transfer/pickup') %>">
+                <img src="<%= @getUrl('/img-white/dynamic/condition-pickup-edit.png') %>" alt="">
+            </a>
+
+            <a class="pickup-withdrawal bank-withdrawal home-withdrawal" href="<%= @getUrl('/white/money-transfer/withdrawal') %>">
+                <img src="<%= @getUrl('/img-white/dynamic/condition-yourbank-edit.png') %>" alt="">
+            </a>
+
+            <a class="pickup-credit bank-credit home-credit" href="<%= @getUrl('/white/money-transfer/credit-card-info') %>">
+                <img src="<%= @getUrl('/img-white/dynamic/condition-card-edit-cvv.png') %>" alt="">
+            </a>
+            <a class="pickup-debit bank-debit home-debit" href="<%= @getUrl('/white/money-transfer/credit-card-info') %>">
+                <img src="<%= @getUrl('/img-white/dynamic/condition-debit-edit-cvv.png') %>" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+<div><a href="<%= @getUrl('/white/money-transfer/thanks') %>"><img src="<%= @getUrl('/img-white/submit-button-block.png') %>" alt=""></a></div>

@@ -1,0 +1,32 @@
+---
+title: Choose you delivery and payment methods
+layout: template
+---
+<div id="auth" data-auth='disabled'><img src="<%= @getUrl('/img-white/breadcrumbs-collapsed.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/profile/payment-options') %>"><img src="<%= @getUrl('/img-white/profile/menu-recipients.png') %>" alt=""></a></div>
+<div><img src="<%= @getUrl('/img-white/profile/recipients-selected.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img-white/profile/moreinfo-top.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/user-profile') %>"><img src="<%= @getUrl('/img-white/profile/name-edit.png') %>" alt=""></a></div>
+
+<div class="expand pointer">
+	<img class="collapsed" src="<%= @getUrl('/img-white/profile/avatar-edit.png') %>" alt="">
+	<div class="not_visible">
+		<img  src="<%= @getUrl('/img-white/profile/avatar-edit-expanded.png') %>" alt="">			
+	</div>
+</div>
+
+
+<div><img src="<%= @getUrl('/img-white/profile/email-edit.png') %>" alt=""></div>
+<div class="expand pointer">
+	<img class="collapsed" src="<%= @getUrl('/img-white/profile/reminder-mt-on.png') %>" alt="">
+	<div class="not_visible">
+		<img  src="<%= @getUrl('/img-white/profile/reminder-mt-off.png') %>" alt="">			
+	</div>
+</div>
+<div class="expand pointer">
+	<img class="collapsed" src="<%= @getUrl('/img-white/profile/reminder-imtu-off.png') %>" alt="">
+	<div class="not_visible">
+		<img  src="<%= @getUrl('/img-white/profile/reminder-imtu-on.png') %>" alt="">			
+	</div>
+</div>
+<div><a href="<%= @getUrl('/user-profile') %>"><img src="<%= @getUrl('/img-white/profile/save.png') %>" alt=""></a></div>

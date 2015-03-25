@@ -1,0 +1,10 @@
+---
+title: Choose you delivery and payment methods
+layout: template
+---
+<div id="auth" data-auth='on'><a href="<%= @getUrl('/user-profile') %>"><img src="<%= @getUrl('/img-white/breadcrumbs-collapsed.png') %>" alt=""></a></div>
+<div><img src="<%= @getUrl('/img-white/title-lets-continue.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img-white/dynamic/add-bank-form.png') %>" alt=""></div>
+<div><a href="<%= @getUrl('/profile/microtransaction') %>"><img src="<%= @getUrl('/img-white/continue.png') %>" alt=""></a></div>
+
+
