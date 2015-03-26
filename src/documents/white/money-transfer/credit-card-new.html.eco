@@ -20,8 +20,8 @@ layout: template
 
             <a class="bank-credit bank-debit bank-withdrawal" href="<%= @getUrl('/white/money-transfer/bank-info') %>"><img src="<%= @getUrl('/img-white/dynamic/condition-bank-edit.png') %>" alt=""></a>
             <a href="<%= @getUrl('/white/money-transfer/recipient-info') %>"><img src="<%= @getUrl('/img-white/dynamic/condition-recipient-edit.png') %>" alt=""></a>
-            <img  src="<%= @getUrl('/img-white/dynamic/condition_24h.png') %>" alt="">
             <img  src="<%= @getUrl('/img-white/dynamic/condition_total.png') %>" alt="">
+            <img  src="<%= @getUrl('/img-white/dynamic/condition_24h.png') %>" alt="">
         </div>
     </div>
 </div>

@@ -19,8 +19,8 @@ layout: template
 
             <a href="<%= @getUrl('/white/money-transfer/recipient-info') %>"><img src="<%= @getUrl('/img-white/dynamic/condition-recipient-edit.png') %>" alt=""></a>
             <a class="pickup-withdrawal" href="<%= @getUrl('/white/money-transfer/pickup') %>"><img src="<%= @getUrl('/img-white/dynamic/condition-pickup-edit.png') %>" alt=""></a>
-            <img  src="<%= @getUrl('/img-white/dynamic/condition_24h.png') %>" alt="">
             <img  src="<%= @getUrl('/img-white/dynamic/condition_total.png') %>" alt="">
+            <img  src="<%= @getUrl('/img-white/dynamic/condition_24h.png') %>" alt="">
         </div>
     </div>
 </div>
