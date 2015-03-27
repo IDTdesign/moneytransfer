@@ -209,7 +209,7 @@ if (localStorage.getItem('delivery') == null)
 
 if (localStorage.getItem('payment') == null)
 {
-    localStorage.setItem('payment','credit');
+    localStorage.setItem('payment','withdrawal');
 }
 
 if (localStorage.getItem('auth') == null)
