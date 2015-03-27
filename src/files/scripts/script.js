@@ -135,7 +135,7 @@
         $('#auto_recharge b').popover()
     }
 
-	// Modal Window for dynamically opening videos
+    // Modal Window for dynamically opening videos
     $('a.modal-video').on('click', function(event){
 
         if (!$('html').hasClass('android') && !$('html').hasClass('ios') && $(window).width() > 768) {
@@ -154,11 +154,11 @@
             if ( $(this).attr('data-height') ) { vidHeight =  parseInt($(this).attr('data-height')); }
             var iFrameCode = '<iframe width="' + vidWidth + '" height="'+ vidHeight +'" scrolling="no" allowtransparency="true" allowfullscreen="true" src="//www.youtube.com/embed/'+  videoLinkID +'?rel=0&autoplay=1" frameborder="0"></iframe>';
 
-		    bootbox.dialog({
-			    className: 'modal-media',
-			    title: vidTitle,
-			    message: iFrameCode
-		    });
+            bootbox.dialog({
+                className: 'modal-media',
+                title: vidTitle,
+                message: iFrameCode
+            });
         }
     });
 
@@ -194,7 +194,7 @@ $('.list a').click(function(){
     if (self.data('payment')) {
         localStorage.setItem('payment', self.data('payment'));
     }
-    
+
 
     return false;
 })
@@ -239,16 +239,16 @@ if($('#checkPath2').length) {
 
 if($('#auth').length) {
     if ($('#auth').data('auth') == 'on') {
-        localStorage.setItem('auth','on');    
+        localStorage.setItem('auth','on');
     } else {
         if ($('#auth').data('auth') == 'disabled') {
-            localStorage.setItem('auth','disabled'); 
+            localStorage.setItem('auth','disabled');
         }
         else {
-            localStorage.setItem('auth','off');        
+            localStorage.setItem('auth','off');
         }
-        
-    }    
+
+    }
 }
 
 $('#delivery a, #payment a').click(function(){
@@ -266,7 +266,7 @@ $('#checkPopup').click(function(){
                 scrollTop: $("#popup").offset().top
             }, 100);
         return false
-    } 
+    }
 })
 
 $('#closePopup').click(function(){
@@ -278,7 +278,7 @@ $('#closePopup').click(function(){
 
 $('body').addClass(localStorage.getItem('delivery') +'-' + localStorage.getItem('payment')+' '+localStorage.getItem('auth'));
 if (localStorage.getItem('auth') != 'disabled') {
-    document.location.hash = localStorage.getItem('delivery') +'-' + localStorage.getItem('payment')+'-'+localStorage.getItem('auth')    
+    document.location.hash = localStorage.getItem('delivery') +'-' + localStorage.getItem('payment')+'-'+localStorage.getItem('auth')
 }
 
 }(jQuery));

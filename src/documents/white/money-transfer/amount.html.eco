@@ -8,6 +8,7 @@ layout: template
 <div><img src="<%= @getUrl('/img-white/country-field.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img-white/amount.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img-white/transfer-rate.png') %>" alt=""></div>
+<div style="margin-bottom:-20px;position:relative;z-index:2"><img src="<%= @getUrl('/img-white/lowest-fee-banner.png') %>" alt=""></div>
 <div id="delivery">
     <div class="list">
         <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" style="height:100px;" alt="">
@@ -43,8 +44,8 @@ layout: template
 
 <div>
     <a  id="checkPath"
-        data-pickup="<%= @getUrl('/white/money-transfer/pickup') %>"
         data-bank="<%= @getUrl('/white/money-transfer/bank-info') %>"
+        data-pickup="<%= @getUrl('/white/money-transfer/pickup') %>"
         data-home="<%= @getUrl('/white/money-transfer/home') %>"
         href="#"
         >
