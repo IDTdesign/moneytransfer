@@ -11,4 +11,6 @@ layout: template
 <div><img src="<%= @getUrl('/img-white/transfer-rate.png') %>" alt=""></div>
 <div><a href="<%= @getUrl('/white/money-transfer/start') %>"><img src="<%= @getUrl('/img-white/get-started.png') %>" alt=""></a></div>
 <div><img src="<%= @getUrl('/img-white/1500.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img-white/free-calling-time.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img-white/other-services.png') %>" alt=""></div>
+<div><img src="<%= @getUrl('/img-white/legal.png') %>" alt=""></div>

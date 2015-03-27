@@ -50,7 +50,7 @@ layout: template
     </a>
 </div>
 <div>
-    <a id="checkPopup" href="<%= @getUrl('/white/register') %>">
+    <a href="<%= @getUrl('/white/register') %>">
         <img src="<%= @getUrl('/img-white/total-continue-1.png') %>" alt="">
     </a>
 </div>

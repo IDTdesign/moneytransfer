@@ -31,5 +31,6 @@ layout: template
 </div>
 
 
-<div></div>
+<div><img src="<%= @getUrl('/img-white/dynamic/confirm-1.png') %>" alt=""></div>
+<div class="pickup-withdrawal bank-withdrawal home-withdrawal"><img src="<%= @getUrl('/img-white/dynamic/confirm-2.png') %>" alt=""></div>
 <div><a href="<%= @getUrl('/white/money-transfer/thanks') %>"><img src="<%= @getUrl('/img-white/submit-button-block.png') %>" alt=""></a></div>
