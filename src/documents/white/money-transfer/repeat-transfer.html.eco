@@ -10,35 +10,35 @@ layout: template
 <div><img src="<%= @getUrl('/img-white/amount.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img-white/transfer-rate.png') %>" alt=""></div>
 <div><img src="<%= @getUrl('/img-white/last-transfer.png') %>" alt=""></div>
-<div style="padding: 20px 0; background: #7A7672;"><img src="<%= @getUrl('/img-white/special-offer.png') %>" alt=""></div>
+<div style="padding: 20px 0; background: #FFF;"><img src="<%= @getUrl('/img-white/special-offer.png') %>" alt=""></div>
 <div id="delivery">
-	<div class="list">
-		<img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
-		<a href="<%= @getUrl('/img-white/dynamic/delivery-1.png') %>" data-delivery="pickup">
-			<img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
-		</a>
-		<a href="<%= @getUrl('/img-white/dynamic/delivery-2.png') %>" data-delivery="bank" class="active">
-			<img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
-		</a>
-		<a href="<%= @getUrl('/img-white/dynamic/delivery-3.png') %>"  data-delivery="home">
-			<img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
-		</a>
-	</div>
-	<img src="<%= @getUrl('/img-white/dynamic/delivery-2.png') %>" alt="">
+    <div class="list">
+        <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
+        <a href="<%= @getUrl('/img-white/dynamic/delivery-1.png') %>" data-delivery="pickup">
+            <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
+        </a>
+        <a href="<%= @getUrl('/img-white/dynamic/delivery-2.png') %>" data-delivery="bank" class="active">
+            <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
+        </a>
+        <a href="<%= @getUrl('/img-white/dynamic/delivery-3.png') %>"  data-delivery="home">
+            <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
+        </a>
+    </div>
+    <img src="<%= @getUrl('/img-white/dynamic/delivery-2.png') %>" alt="">
 </div>
 <div id="payment">
-	<div class="list">
-		<img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
-		<a href="<%= @getUrl('/img-white/dynamic/payment-1.png') %>"  data-payment="credit" class="active">
-			<img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
-		</a>
-		<a href="<%= @getUrl('/img-white/dynamic/payment-2.png') %>" data-payment="debit">
-			<img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
-		</a>
-		<a href="<%= @getUrl('/img-white/dynamic/payment-3.png') %>" data-payment="withdrawal">
-			<img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
-		</a>
-	</div>
-	<img src="<%= @getUrl('/img-white/dynamic/payment-1.png') %>" alt="">
+    <div class="list">
+        <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
+        <a href="<%= @getUrl('/img-white/dynamic/payment-1.png') %>"  data-payment="credit" class="active">
+            <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
+        </a>
+        <a href="<%= @getUrl('/img-white/dynamic/payment-2.png') %>" data-payment="debit">
+            <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
+        </a>
+        <a href="<%= @getUrl('/img-white/dynamic/payment-3.png') %>" data-payment="withdrawal">
+            <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" alt="">
+        </a>
+    </div>
+    <img src="<%= @getUrl('/img-white/dynamic/payment-1.png') %>" alt="">
 </div>
 <div><a href="<%= @getUrl('/white/money-transfer/confirm-repeat') %>"><img src="<%= @getUrl('/img-white/total-continue-1.png') %>" alt=""></a></div>

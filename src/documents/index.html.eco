@@ -5,9 +5,10 @@ layout: default
 
 <h1>Money transfer</h1>
 
-<ul>
-    <li><a href="<%= @getUrl('/white/country-page') %>">Start from Country page (new user) #White</a></li>
-    <li><a href="<%= @getUrl('/money-transfer') %>">My account/Money Transfer</a></li>
-    <li><a href="<%= @getUrl('/user-profile') %>">My account/User profile</a></li>
-    <li><a href="<%= @getUrl('/country-page') %>"><span>OLD</span> Start from Country page (new user) #Dark</a></li>
-</ul>
+
+    <p><a href="<%= @getUrl('/white/country-page') %>">Start from Country page (new user) #White</a></p>
+    <p><a href="<%= @getUrl('/white/money-transfer') %>">My account/Money Transfer</a></p>
+    <p><a href="<%= @getUrl('/white/user-profile') %>">My account/User profile</a></p>
+    <hr>
+    <p><a href="<%= @getUrl('/country-page') %>"><span>OLD</span> Start from Country page (new user) #Dark</a></p>
+
