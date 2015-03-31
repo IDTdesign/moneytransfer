@@ -7,7 +7,7 @@ layout: template
 <div><img src="<%= @getUrl('/img-white/title-confirm.png') %>" alt=""></div>
 <div>
     <a href="<%= @getUrl('/white/money-transfer/amount') %>"><img src="<%= @getUrl('/img-white/transfer-summary-edit.png') %>" alt=""></a>
-    <div class="expand expanded">
+    <div class="expand">
         <img class="collapsed" src="<%= @getUrl('/img-white/dynamic/transfer-summary-summ.png') %>" alt="">
         <div class="not_visible">
             <img class="pickup-credit pickup-debit pickup-withdrawal" src="<%= @getUrl('/img-white/dynamic/condition-pickup.png') %>" alt="">

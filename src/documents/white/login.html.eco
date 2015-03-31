@@ -1,0 +1,15 @@
+---
+title: 'Login or Register'
+layout: template
+---
+
+<div style="position: relative;">
+    <a href="<%= @getUrl('/white/register') %>" style="position: absolute; right:0; top:225px; width:50%; height: 75px"></a>
+    <a id="checkPath"
+        data-pickup="<%= @getUrl('/white/money-transfer/pickup') %>"
+        data-bank="<%= @getUrl('/white/money-transfer/bank-info') %>"
+        data-home="<%= @getUrl('/white/money-transfer/recipient-info') %>"
+        href="#">
+        <img src="<%= @getUrl('/img-white/login-page-all.png') %>" alt="">
+     </a>
+</div>

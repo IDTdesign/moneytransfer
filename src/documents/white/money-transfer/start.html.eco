@@ -10,7 +10,7 @@ layout: template
 <div style="margin-bottom:-20px;position:relative;z-index:2"><img src="<%= @getUrl('/img-white/lowest-fee-banner.png') %>" alt=""></div>
 <div id="delivery">
     <div class="list">
-        <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" style="height:100px;" alt="">
+        <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" style="height:65px;" alt="">
         <a href="<%= @getUrl('/img-white/dynamic/delivery-1.png') %>" data-delivery="bank" class="active">
             <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" style="height:55px;" alt="">
         </a>
@@ -25,7 +25,7 @@ layout: template
 </div>
 <div id="payment">
     <div class="list">
-        <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" style="height:100px;" alt="">
+        <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" style="height:65px;" alt="">
         <a href="<%= @getUrl('/img-white/dynamic/payment-1.png') %>" data-payment="withdrawal" class="active">
             <img src="<%= @getUrl('/img-white/dynamic/space.png') %>" style="height:55px;" alt="">
         </a>
@@ -47,7 +47,7 @@ layout: template
     </a>
 </div>
 <div>
-    <a id="checkPopup" href="<%= @getUrl('/white/register') %>">
+    <a href="<%= @getUrl('/white/login') %>">
         <img src="<%= @getUrl('/img-white/total-continue-1.png') %>" alt="">
     </a>
 </div>

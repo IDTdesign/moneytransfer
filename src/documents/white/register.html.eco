@@ -1,15 +1,15 @@
 ---
-title: 'Login or Register'
+title: 'Register or Login'
 layout: template
 ---
 
-<div>
-    <a  id="checkPath"
-        data-pickup="<%= @getUrl('/white/money-transfer/pickup') %>"
-        data-bank="<%= @getUrl('/white/money-transfer/bank-info') %>"
-        data-home="<%= @getUrl('/white/money-transfer/recipient-info') %>"
-        href="#"
-    >
-        <img src="<%= @getUrl('/img-white/login-page-all.png') %>" alt="">
+<div style="position: relative;">
+    <a href="<%= @getUrl('/white/login') %>" style="position: absolute; left:0; top:225px; width:50%; height: 75px"></a>
+    <a id="checkPath2"
+        data-credit="<%= @getUrl('/white/money-transfer/start') %>"
+        data-debit="<%= @getUrl('/white/money-transfer/start') %>"
+        data-withdrawal="<%= @getUrl('/white/money-transfer/start-new-user') %>"
+        href="<%= @getUrl('/white/money-transfer/start') %>">
+        <img src="<%= @getUrl('/img-white/register-page-all.png') %>" alt="">
      </a>
 </div>

@@ -21,8 +21,9 @@ layout: template
 </div>
 <div>
     <div class="expand">
-        <img src="<%= @getUrl('/img-white/pickup-location.png') %>" alt="">
+        <img class="collapsed" src="<%= @getUrl('/img-white/pickup-location.png') %>" alt="">
         <div class="not_visible">
+            <img src="<%= @getUrl('/img-white/pickup-location-2.png') %>" alt="">
             <a href="<%= @getUrl('/white/money-transfer/recipient-info') %>">
                 <img src="<%= @getUrl('/img-white/pickup-location-results.png') %>" alt="">
             </a>
