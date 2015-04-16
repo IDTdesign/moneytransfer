@@ -1,0 +1,85 @@
+html, body {
+	max-width: 640px;
+}
+.expand {
+	cursor: pointer;
+}
+
+.not_visible {
+	display: none;
+}
+.expanded .not_visible {
+	display: block;
+}
+
+.expand .collapsed {
+	display: block;
+}
+.expanded .collapsed{
+	display: none;
+}
+
+img{
+	display: block;
+}
+
+#payment,
+#delivery {
+	position: relative;
+}
+#payment a,
+#delivery a {
+	outline: none;
+}
+
+.list{
+	position: absolute;
+	left: 0;	
+	width: 100%;
+}
+.list a{
+	display: block;	
+}
+
+body .pickup-credit,
+body .pickup-debit,
+body .pickup-withdrawal,
+body .bank-credit,
+body .bank-debit,
+body .bank-withdrawal,
+body .home-credit,
+body .home-debit,
+body .home-withdrawal
+{display: none !important;}
+
+
+.pickup-credit .pickup-credit,
+.pickup-debit .pickup-debit,
+.pickup-withdrawal .pickup-withdrawal,
+.bank-credit .bank-credit,
+.bank-debit .bank-debit,
+.bank-withdrawal .bank-withdrawal,
+.home-credit .home-credit,
+.home-debit .home-debit,
+.home-withdrawal .home-withdrawal
+{display: block !important;}
+
+.on .off {
+	display: none;
+}
+
+.off .on {
+	display: none;
+}
+
+#popup {
+	display: none;
+}
+
+.border-bottom {
+	border-bottom: solid 10px #716f6d;
+}
+
+.pointer {
+	cursor: pointer;
+}
